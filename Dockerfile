@@ -17,7 +17,7 @@ RUN wget -P /usr/local http://meteorite.bi/downloads/saiku-latest.zip
 RUN unzip -u /usr/local/saiku-latest.zip -d /usr/local
 
 # Remove wget and zip
-RUN apt-get remove wget
+RUN apt-get remove wget --auto-remove -y
 RUN rm /usr/local/saiku-latest.zip
 
 EXPOSE 8080

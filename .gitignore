@@ -1,2 +1,5 @@
-# vagrant files
-Vagrantfile
+# ignore all files but not following files
+/*
+!Vagrantfile
+!.gitignore
+!README.md
